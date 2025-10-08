@@ -19,7 +19,7 @@ console.log("PromptInput received chatHistory:", chatHistory);
     //@ts-nocheck
     class PromptInput extends HTMLElement {
         connectedCallback() {
-            // Read the message from the data attribute.
+            // Read the message from the data attributef.
             const history = JSON.parse(this.dataset.chat);
             console.log("PromptInput history:", history);
             const button = this.querySelector('button');
