@@ -93,11 +93,12 @@ export type SuperusersRecord = {
 
 export type SvgRecord<Tchat_history = unknown> = {
 	chat_history?: null | Tchat_history
-	code_svg?: HTMLString
+	code?: HTMLString
 	created?: IsoDateString
 	id: string
-	nom?: string
+	name?: string
 	updated?: IsoDateString
+	user?: UsersRecord | RecordIdString
 }
 
 export type UsersRecord = {
